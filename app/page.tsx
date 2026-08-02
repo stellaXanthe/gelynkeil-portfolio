@@ -3,6 +3,7 @@ import AnimatedCounter from "./components/animated-counter";
 import Reveal from "./components/scroll-reveal";
 import ThreeScene from "./components/three-scene";
 import ContactForm from "./components/contact-form";
+import AiChat from "./components/ai-chat";
 
 const experience = [
   {
@@ -108,8 +109,8 @@ export default function Home() {
               Software Quality Engineering
             </span>
             <div className="space-y-4">
-              <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-                Gelyn Keil Z. Dela Cruz
+              <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">
+  Gelyn Keil Z. Dela Cruz
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
                 Results-driven Software Quality Engineer with 4+ years&apos; experience improving product reliability in Agile teams.
@@ -323,6 +324,8 @@ export default function Home() {
       <footer className="mx-auto max-w-7xl px-5 pb-10 pt-4 text-center text-sm text-slate-400 sm:px-8 lg:px-10">
         © 2026 Gelyn Keil Z. Dela Cruz. Crafted for thoughtful software quality engineering.
       </footer>
+
+      <AiChat />
     </main>
   );
 }
