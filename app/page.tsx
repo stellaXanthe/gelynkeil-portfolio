@@ -75,14 +75,34 @@ const expertiseGroups = [
       "Customer Success",
     ],
   },
+  {
+    title: "AI & Data Engineering (Vibe Coding)",
+    items: [
+      "AI-Assisted Prototyping & Build Flow",
+      "Schema Drift & Data Quality Validation",
+      "FastAPI REST APIs & Pytest Automation",
+      "Zero-Retention Data Architecture",
+    ],
+  },
 ];
 
 const projects = [
   {
-    title: "Multi-Source Data Validator Engine",
-    type: "Full-Stack Data Quality Engine • 2026",
+    title: "Multi-Source Data Validation Engine",
+    type: "Full-Stack Data Quality Platform • 2026",
     summary:
-      "Engineered a privacy-focused data validation engine featuring automatic field matching, schema comparison, row-level hashing, and 42 automated tests. Supports File (CSV, Parquet, JSON), SQL (SQLAlchemy), and Databricks connectors with a REST API backend and interactive Web UI.",
+      "Engineered a privacy-first data quality platform and REST API built with Python, FastAPI, Next.js, and Pytest. Built around zero data retention, automated backend testing, and interactive schema/row validation.",
+    features: [
+      "Matcher Engine — Automatic field and schema matching using exact and fuzzy algorithm logic (python-Levenshtein)",
+      "Schema Comparator — Instant type mismatch detection, missing-column analysis, and schema drift reports",
+      "Row Comparator — High-performance hash-based validation, composite key matching, missing row detection, and duplicate checking",
+      "File Connectors — Full ingestion support for CSV, Parquet, and JSON files",
+      "SQL Connectors — Generic SQLAlchemy engine compatible with Postgres, MySQL, and SQL Server",
+      "Databricks Connector — Direct SQL Warehouse queries, automated schema discovery, and Arrow-to-pandas conversion",
+      "REST API & Docs — FastAPI backend with working endpoints (/validate, /connections/test, /health) and auto-generated Swagger docs",
+      "Automated Testing — Automated Python + Pytest test suites ensuring backend coverage & stability",
+      "Data Privacy — Strict zero-storage architecture where user data is never saved or persisted",
+    ],
     tech: [
       "Python",
       "FastAPI",
@@ -91,6 +111,7 @@ const projects = [
       "Databricks SQL",
       "Pandas",
       "PyArrow",
+      "Next.js",
     ],
   },
   {
@@ -98,6 +119,7 @@ const projects = [
     type: "AI-Assisted Prototype • Vibe Coding",
     summary:
       "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation.",
+    features: [],
     tech: ["AI-Assisted Coding", "GitHub Copilot"],
   },
   {
@@ -105,6 +127,7 @@ const projects = [
     type: "AI-Powered Web Application • 2026",
     summary:
       "Built and deployed a full-stack assistant service with scheduling, billing intake, and AI-driven support workflows for a HIPAA-focused product.",
+    features: [],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET", "Azure", "Vercel"],
   },
   {
@@ -112,6 +135,7 @@ const projects = [
     type: "Interactive Web Application • 2026",
     summary:
       "Designed and built this portfolio site featuring a custom Three.js 3D hero scene, an AI-powered chat assistant, and an automated contact form with email confirmation workflows.",
+    features: [],
     tech: ["Next.js", "TypeScript", "Three.js", "Tailwind CSS", "Vercel"],
   },
 ];
@@ -139,7 +163,7 @@ export default function Home() {
             </span>
             <div className="space-y-4">
               <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">
-  Gelyn Keil Z. Dela Cruz
+                Gelyn Keil Z. Dela Cruz
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
                 Results-driven Software Quality Engineer with 4+ years&apos; experience improving product reliability in Agile teams.
@@ -265,8 +289,27 @@ export default function Home() {
                     <p className="text-[#f2b84e]">{project.type}</p>
                   </div>
                 </div>
+                
                 <p className="mt-4 max-w-3xl text-sm leading-8 text-slate-300">{project.summary}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
+
+                {/* Key Features Block */}
+                {Array.isArray(project.features) && project.features.length > 0 && (
+                  <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.02] p-4">
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#8fe2d2]">
+                      Key Components & Capabilities
+                    </p>
+                    <ul className="space-y-2 text-xs leading-6 text-slate-300 sm:text-sm">
+                      {project.features.map((feat, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#f2b84e]" />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                <div className="mt-5 flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-300">
                       {tech}
@@ -281,68 +324,67 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
         <Reveal>
-        <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
-  <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
-    <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Expertise</p>
-    <h2 className="mt-2 text-3xl font-semibold text-white">Areas of strength</h2>
-    <div className="mt-6 grid gap-4 md:grid-cols-2">
-      {expertiseGroups.map((group) => (
-        <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-          <h3 className="text-lg font-semibold text-[#f2b84e]">{group.title}</h3>
-          <ul className="mt-3 space-y-2 text-sm text-slate-300">
-            {group.items.map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#8fe2d2]" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </div>
+          <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Expertise</p>
+              <h2 className="mt-2 text-3xl font-semibold text-white">Areas of strength</h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {expertiseGroups.map((group) => (
+                  <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <h3 className="text-lg font-semibold text-[#f2b84e]">{group.title}</h3>
+                    <ul className="mt-3 space-y-2 text-sm text-slate-300">
+                      {group.items.map((item) => (
+                        <li key={item} className="flex gap-2">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#8fe2d2]" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-  <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
-    <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Education & Certifications</p>
-    <div className="mt-5 space-y-4 text-sm leading-8 text-slate-300">
-      <div>
-        <h3 className="font-semibold text-white">Bachelor in Business Management</h3>
-        <p>Major in Marketing Management — Cavite State University, 2020</p>
-      </div>
-      <div>
-      <h3 className="font-semibold text-white">Airtable Admin Certification</h3>
-        <p>Airtable Academy — 2026</p>
-        <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
-          <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
-        </a>
-        <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
-          Show Credential
-        
-        </a>
-      </div>
-      <div>
-        <h3 className="font-semibold text-white">AZ-900: Microsoft Azure Fundamentals</h3>
-        <p>Microsoft — 2022</p>
-        <a href="/certifications/az-900.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
-          <Image src="/certifications/az-900.png" alt="AZ-900 Microsoft Azure Fundamentals certificate" width={400} height={300} className="h-auto w-full" />
-        </a>
-        <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
-          Show Credential
-        </a>
-      </div>
-      <div>
-        <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
-        <p>Databricks — 2024</p>
-        <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
-          <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
-        </a>
-        <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
-          Show Credential
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Education & Certifications</p>
+              <div className="mt-5 space-y-4 text-sm leading-8 text-slate-300">
+                <div>
+                  <h3 className="font-semibold text-white">Bachelor in Business Management</h3>
+                  <p>Major in Marketing Management — Cavite State University, 2020</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white">Airtable Admin Certification</h3>
+                  <p>Airtable Academy — 2026</p>
+                  <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+                    <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
+                  </a>
+                  <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+                    Show Credential
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white">AZ-900: Microsoft Azure Fundamentals</h3>
+                  <p>Microsoft — 2022</p>
+                  <a href="/certifications/az-900.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+                    <Image src="/certifications/az-900.png" alt="AZ-900 Microsoft Azure Fundamentals certificate" width={400} height={300} className="h-auto w-full" />
+                  </a>
+                  <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+                    Show Credential
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
+                  <p>Databricks — 2024</p>
+                  <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+                    <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
+                  </a>
+                  <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+                    Show Credential
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </Reveal>
       </section>
 
