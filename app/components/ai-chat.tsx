@@ -60,8 +60,8 @@ function buildReply(rawMessage: string): string {
 
   // Certifications
   if (/(certification|certificate|certified)/.test(message)) {
-    return "Gelyn holds two certifications: Databricks Certified Data Engineer Associate (2024) and AZ-900: Microsoft Azure Fundamentals (2022).";
-  }
+  return "Gelyn holds three certifications: Databricks Certified Data Engineer Associate (2024), AZ-900: Microsoft Azure Fundamentals (2022), and Airtable Admin Certification (2026).";
+}
 
   // Education
   if (/(education|degree|university|college|study|studied)/.test(message)) {

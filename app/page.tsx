@@ -4,12 +4,13 @@ import Reveal from "./components/scroll-reveal";
 import ThreeScene from "./components/three-scene";
 import ContactForm from "./components/contact-form";
 import AiChat from "./components/ai-chat";
+import Image from "next/image";
 
 const experience = [
   {
     role: "Quality Engineering Analyst",
     company: "Accenture, INC.",
-    period: "Sept 2023 – Present",
+    period: "Sept 2023 – July 2026",
     bullets: [
       "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation.",
       "Designed and presented a comprehensive test strategy aligning cross-functional teams on quality objectives and scope.",
@@ -252,44 +253,67 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
-            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Expertise</p>
-              <h2 className="mt-2 text-3xl font-semibold text-white">Areas of strength</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {expertiseGroups.map((group) => (
-                  <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <h3 className="text-lg font-semibold text-[#f2b84e]">{group.title}</h3>
-                    <ul className="mt-3 space-y-2 text-sm text-slate-300">
-                      {group.items.map((item) => (
-                        <li key={item} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#8fe2d2]" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Education & Certifications</p>
-              <div className="mt-5 space-y-4 text-sm leading-8 text-slate-300">
-                <div>
-                  <h3 className="font-semibold text-white">Bachelor in Business Management</h3>
-                  <p>Major in Marketing Management — Cavite State University, 2020</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
-                  <p>Databricks — 2024</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">AZ-900: Microsoft Azure Fundamentals</h3>
-                  <p>Microsoft — 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+  <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
+    <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Expertise</p>
+    <h2 className="mt-2 text-3xl font-semibold text-white">Areas of strength</h2>
+    <div className="mt-6 grid gap-4 md:grid-cols-2">
+      {expertiseGroups.map((group) => (
+        <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <h3 className="text-lg font-semibold text-[#f2b84e]">{group.title}</h3>
+          <ul className="mt-3 space-y-2 text-sm text-slate-300">
+            {group.items.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#8fe2d2]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
+    <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Education & Certifications</p>
+    <div className="mt-5 space-y-4 text-sm leading-8 text-slate-300">
+      <div>
+        <h3 className="font-semibold text-white">Bachelor in Business Management</h3>
+        <p>Major in Marketing Management — Cavite State University, 2020</p>
+      </div>
+      <div>
+        <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
+        <p>Databricks — 2024</p>
+        <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+          <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
+        </a>
+        <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+          Show Credential
+        </a>
+      </div>
+      <div>
+        <h3 className="font-semibold text-white">AZ-900: Microsoft Azure Fundamentals</h3>
+        <p>Microsoft — 2022</p>
+        <a href="/certifications/az-900.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+          <Image src="/certifications/az-900.png" alt="AZ-900 Microsoft Azure Fundamentals certificate" width={400} height={300} className="h-auto w-full" />
+        </a>
+        <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+          Show Credential
+        </a>
+      </div>
+      <div>
+        <h3 className="font-semibold text-white">Airtable Admin Certification</h3>
+        <p>Airtable Academy — 2026</p>
+        <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+          <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
+        </a>
+        <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+          Show Credential
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
         </Reveal>
       </section>
 
