@@ -79,6 +79,21 @@ const expertiseGroups = [
 
 const projects = [
   {
+    title: "Multi-Source Data Validator Engine",
+    type: "Full-Stack Data Quality Engine • 2026",
+    summary:
+      "Engineered a privacy-focused data validation engine featuring automatic field matching, schema comparison, row-level hashing, and 42 automated tests. Supports File (CSV, Parquet, JSON), SQL (SQLAlchemy), and Databricks connectors with a REST API backend and interactive Web UI.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "Pytest",
+      "SQLAlchemy",
+      "Databricks SQL",
+      "Pandas",
+      "PyArrow",
+    ],
+  },
+  {
     title: "Price-Competitor Checker",
     type: "AI-Assisted Prototype • Vibe Coding",
     summary:
@@ -295,13 +310,14 @@ export default function Home() {
         <p>Major in Marketing Management — Cavite State University, 2020</p>
       </div>
       <div>
-        <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
-        <p>Databricks — 2024</p>
-        <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
-          <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
+      <h3 className="font-semibold text-white">Airtable Admin Certification</h3>
+        <p>Airtable Academy — 2026</p>
+        <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+          <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
         </a>
-        <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+        <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
           Show Credential
+        
         </a>
       </div>
       <div>
@@ -315,12 +331,12 @@ export default function Home() {
         </a>
       </div>
       <div>
-        <h3 className="font-semibold text-white">Airtable Admin Certification</h3>
-        <p>Airtable Academy — 2026</p>
-        <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
-          <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
+        <h3 className="font-semibold text-white">Databricks Certified Data Engineer Associate</h3>
+        <p>Databricks — 2024</p>
+        <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-white/10 transition hover:border-[#8fe2d2]/40">
+          <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
         </a>
-        <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
+        <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8fe2d2] transition hover:text-[#f2b84e]">
           Show Credential
         </a>
       </div>
