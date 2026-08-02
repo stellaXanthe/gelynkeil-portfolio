@@ -12,7 +12,6 @@ const experience = [
     company: "Accenture, INC.",
     period: "Sept 2023 – July 2026",
     bullets: [
-      "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation.",
       "Designed and presented a comprehensive test strategy aligning cross-functional teams on quality objectives and scope.",
       "Authored high-coverage test plans and achieved 98% coverage across multiple projects.",
       "Leveraged GitHub Copilot and MCP to streamline requirements analysis and accelerate test-case generation.",
@@ -80,11 +79,25 @@ const expertiseGroups = [
 
 const projects = [
   {
+    title: "Price-Competitor Checker",
+    type: "AI-Assisted Prototype • Vibe Coding",
+    summary:
+      "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation.",
+    tech: ["AI-Assisted Coding", "GitHub Copilot"],
+  },
+  {
     title: "Medical VA Lexie",
     type: "AI-Powered Web Application • 2026",
     summary:
       "Built and deployed a full-stack assistant service with scheduling, billing intake, and AI-driven support workflows for a HIPAA-focused product.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET", "Azure", "Vercel"],
+  },
+  {
+    title: "Personal Portfolio",
+    type: "Interactive Web Application • 2026",
+    summary:
+      "Designed and built this portfolio site featuring a custom Three.js 3D hero scene, an AI-powered chat assistant, and an automated contact form with email confirmation workflows.",
+    tech: ["Next.js", "TypeScript", "Three.js", "Tailwind CSS", "Vercel"],
   },
 ];
 
