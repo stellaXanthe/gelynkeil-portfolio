@@ -2,7 +2,7 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Sparkles } from "@react-three/drei";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 type MouseState = {
@@ -18,19 +18,7 @@ type SceneContentProps = {
 function SceneContent({ mouse, isMobile }: SceneContentProps) {
   const groupRef = useRef<THREE.Group>(null);
   const coreRef = useRef<THREE.Mesh>(null);
-  const ringsGroupRef = useRef<THREE.Group>(null);
   const wireMeshRef = useRef<THREE.Mesh>(null);
-
-  // Generate 4 outer rings located outside the wireframe mesh
-  const rings = useMemo(() => {
-    return Array.from({ length: 4 }).map((_, index) => {
-      const rx = (Math.PI / 4) * index;
-      const ry = (Math.PI / 3) * index;
-      const rz = (Math.PI / 6) * index;
-
-      return { rx, ry, rz };
-    });
-  }, []);
 
   useFrame((state, delta) => {
     // Direct mouse tracking for cursor hover & swinging motion
@@ -64,14 +52,6 @@ function SceneContent({ mouse, isMobile }: SceneContentProps) {
       wireMeshRef.current.rotation.y -= delta * 0.1;
     }
 
-    // Animate 4 outer rings smoothly around the mesh
-    if (ringsGroupRef.current) {
-      ringsGroupRef.current.children.forEach((ring, idx) => {
-        const speed = (idx % 2 === 0 ? 1 : -1) * 0.12;
-        ring.rotation.z += delta * speed;
-      });
-    }
-
     state.camera.position.lerp(
       new THREE.Vector3(0, 0, 7.0),
       0.04
@@ -80,11 +60,11 @@ function SceneContent({ mouse, isMobile }: SceneContentProps) {
 
   return (
     <group ref={groupRef}>
-      {/* Gentle Floating Glitter Particles (No spiraling, linear float) */}
+      {/* Gentle Floating Glitter Particles */}
       <Sparkles
         count={isMobile ? 70 : 150}
-        scale={[4.8, 4.8, 4.8]}
-        size={1.2}
+        scale={[5.5, 5.5, 5.5]}
+        size={1.4}
         speed={0.25}
         opacity={0.85}
         color="#ffffff"
@@ -93,9 +73,9 @@ function SceneContent({ mouse, isMobile }: SceneContentProps) {
 
       <Float speed={1.0} rotationIntensity={0.1} floatIntensity={0.3}>
         <group>
-          {/* Main Gold Core (Radius bumped to 1.30 inside 1.50 mesh) */}
+          {/* Enlarged Main Gold Core (Radius = 1.70) */}
           <mesh ref={coreRef} position={[0, 0, 0]}>
-            <icosahedronGeometry args={[1.30, 0]} />
+            <icosahedronGeometry args={[1.70, 0]} />
             <meshStandardMaterial
               color="#f59e0b"
               emissive="#d4af37"
@@ -105,30 +85,11 @@ function SceneContent({ mouse, isMobile }: SceneContentProps) {
             />
           </mesh>
 
-          {/* Wireframe Mesh Frame Surrounding Core (Radius = 1.50) */}
+          {/* Enlarged Wireframe Mesh Frame Surrounding Core (Radius = 2.05) */}
           <mesh ref={wireMeshRef} position={[0, 0, 0]}>
-            <icosahedronGeometry args={[1.50, 1]} />
+            <icosahedronGeometry args={[2.05, 1]} />
             <meshBasicMaterial color="#10b981" wireframe transparent opacity={0.3} />
           </mesh>
-
-          {/* 4 Outer Metallic Gold Rings Positioned Beyond Mesh Radius (2.05 > 1.50) */}
-          <group ref={ringsGroupRef}>
-            {rings.map((ring, idx) => (
-              <mesh
-                key={idx}
-                rotation={[ring.rx, ring.ry, ring.rz]}
-              >
-                <torusGeometry args={[2.05, 0.018, 16, 90]} />
-                <meshStandardMaterial
-                  color="#f59e0b"
-                  emissive="#d4af37"
-                  emissiveIntensity={0.4}
-                  roughness={0.15}
-                  metalness={0.85}
-                />
-              </mesh>
-            ))}
-          </group>
         </group>
       </Float>
     </group>
