@@ -6,6 +6,8 @@ import ContactForm from "./components/contact-form";
 import AiChat from "./components/ai-chat";
 import Image from "next/image";
 import PersonSchema from "./components/person-schema";
+import ProjectCard from "./components/ProjectCard";
+import { motion } from "framer-motion";
 
 const experience = [
   {
@@ -42,9 +44,10 @@ const expertiseGroups = [
       "Test Automation",
       "Exploratory Testing",
       "System Integration Testing",
-      "UAT",
+      "User Acceptance Testing (UAT)",
       "Verification & Validation",
-      "Regression & Defect Management",
+      "Regression Testing",
+      "Defect Management",
     ],
   },
   {
@@ -53,57 +56,85 @@ const expertiseGroups = [
       "Azure DevOps",
       "Jira",
       "Playwright",
-      "SQL & Database Validation",
-      "Agentic AI",
+      "SQL",
+      "Git",
+      "GitHub",
+      "GitHub Copilot",
+      "MCP",
     ],
   },
   {
-    title: "Process & Practice",
+    title: "AI & Development",
     items: [
-      "Shift-Left Testing",
-      "Agile Delivery",
-      "Test Process Management",
-      "Reporting & Analytics",
-      "Issue Resolution",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      ".NET",
+      "REST APIs",
+      "AI-Assisted Development",
+    ],
+  },
+  {
+    title: "Data Engineering",
+    items: [
+      "SQLAlchemy",
+      "Databricks SQL",
+      "Pandas",
+      "PyArrow",
+      "Schema Validation",
+      "Data Quality",
+      "CSV / JSON / Parquet",
     ],
   },
   {
     title: "Leadership & Collaboration",
     items: [
-      "Coaching & Mentorship",
-      "Cross-Functional Collaboration",
-      "Client Communication",
-      "Customer Success",
-    ],
-  },
-  {
-    title: "AI & Data Engineering (Vibe Coding)",
-    items: [
-      "AI-Assisted Prototyping & Build Flow",
-      "Schema Drift & Data Quality Validation",
-      "FastAPI REST APIs & Pytest Automation",
-      "Zero-Retention Data Architecture",
+      "Agile",
+      "Test Strategy",
+      "Cross-functional Collaboration",
+      "Stakeholder Communication",
+      "Mentoring",
+      "Release Planning",
     ],
   },
 ];
+
 
 const projects = [
   {
     title: "Multi-Source Data Validation Engine",
     type: "Full-Stack Data Quality Platform • 2026",
+
     summary:
-      "Engineered a privacy-first data quality platform and REST API built with Python, FastAPI, Next.js, and Pytest. Built around zero data retention, automated backend testing, and interactive schema/row validation.",
-    features: [
-      "Matcher Engine — Automatic field and schema matching using exact and fuzzy algorithm logic (python-Levenshtein)",
-      "Schema Comparator — Instant type mismatch detection, missing-column analysis, and schema drift reports",
-      "Row Comparator — High-performance hash-based validation, composite key matching, missing row detection, and duplicate checking",
-      "File Connectors — Full ingestion support for CSV, Parquet, and JSON files",
-      "SQL Connectors — Generic SQLAlchemy engine compatible with Postgres, MySQL, and SQL Server",
-      "Databricks Connector — Direct SQL Warehouse queries, automated schema discovery, and Arrow-to-pandas conversion",
-      "REST API & Docs — FastAPI backend with working endpoints (/validate, /connections/test, /health) and auto-generated Swagger docs",
-      "Automated Testing — Automated Python + Pytest test suites ensuring backend coverage & stability",
-      "Data Privacy — Strict zero-storage architecture where user data is never saved or persisted",
+      "Engineered a privacy-first data quality platform and REST API built with Python, FastAPI, Next.js and Pytest. Built around zero data retention, automated backend testing, and interactive schema/row validation.",
+
+    images: [
+      "/projects/data validator/sign-in.png",
+      "/projects/data validator/landing.png",
+      "/projects/data validator/after-login.png",
+      "/projects/data validator/setup.png",
+      "/projects/data validator/sample-validation-1.png",
+      "/projects/data validator/sample-validation-2.png",
+      "/projects/data validator/validator-help.png",
     ],
+
+    liveUrl: "",
+
+    githubUrl: "",
+
+    features: [
+      "Matcher Engine — Automatic field matching",
+      "Schema Comparator",
+      "Row Comparator",
+      "CSV / JSON / Parquet support",
+      "Databricks SQL Connector",
+      "FastAPI REST API",
+      "Pytest automated testing",
+      "Zero-retention architecture",
+    ],
+
     tech: [
       "Python",
       "FastAPI",
@@ -115,33 +146,114 @@ const projects = [
       "Next.js",
     ],
   },
+
   {
     title: "Price-Competitor Checker",
-    type: "AI-Assisted Prototype • Vibe Coding",
+
+    type: "AI-Assisted Prototype • Vibe Coding • 2026",
+
     summary:
-      "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation.",
-    features: [],
-    tech: ["AI-Assisted Coding", "GitHub Copilot"],
+      "Developed a price-competitor checker prototype through AI-assisted vibe coding to accelerate pricing-scenario validation and competitive analysis.",
+
+    images: [
+      "/projects/ai-competitor-price-watch/ai-competitorpricewatch.png",
+    ],
+
+    liveUrl: "",
+
+    githubUrl: "",
+
+    features: [
+      "Competitor price monitoring",
+      "Pricing scenario validation",
+      "AI-assisted prototype development",
+      "Rapid solution exploration",
+    ],
+
+    tech: [
+      "AI-Assisted Coding",
+      "GitHub Copilot",
+    ],
   },
+
   {
     title: "Medical VA Lexie",
-    type: "AI-Powered Web Application • 2026",
+
+    type: "AI Powered Web Application • 2026",
+
     summary:
-      "Built and deployed a full-stack assistant service with scheduling, billing intake, and AI-driven support workflows for a HIPAA-focused product.",
-    features: [],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET", "Azure", "Vercel"],
+      "Built a complete AI-powered medical virtual assistant with scheduling, billing, AI support workflows and responsive UI.",
+
+    images: [
+      "/projects/medical va/home.png",
+      "/projects/medical va/navmenu.png",
+      "/projects/medical va/about.png",
+      "/projects/medical va/services.png",
+      "/projects/medical va/services-billing.png",
+      "/projects/medical va/contact.png",
+    ],
+
+    liveUrl: "",
+
+    githubUrl: "",
+
+    features: [
+      "Patient scheduling",
+      "AI Assistant",
+      "Billing workflow",
+      "Responsive design",
+      "Modern medical landing pages",
+    ],
+
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      ".NET",
+      "Azure",
+      "Vercel",
+    ],
   },
+
   {
     title: "Personal Portfolio",
-    type: "Interactive Web Application • 2026",
+
+    type: "Interactive Website • 2026",
+
     summary:
-      "Designed and built this portfolio site featuring a custom Three.js 3D hero scene, an AI-powered chat assistant, and an automated contact form with email confirmation workflows.",
-    features: [],
-    tech: ["Next.js", "TypeScript", "Three.js", "Tailwind CSS", "Vercel"],
+      "A modern software engineering portfolio built using Next.js, Three.js and AI integrations.",
+
+    images: [
+      "/projects/PortfolioUI/home.png",
+    ],
+
+    liveUrl: "",
+
+    githubUrl: "https://github.com/stellaXanthe",
+
+    features: [
+      "Three.js Hero",
+      "AI Chat Assistant",
+      "Contact Form",
+      "Responsive Design",
+      "SEO Optimized",
+    ],
+
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Three.js",
+      "Vercel",
+    ],
   },
 ];
 
 export default function Home() {
+
+  console.log("TOTAL PROJECTS:", projects.length);
+  console.log(projects.map((p) => p.title));
+
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(242,184,78,0.12),_transparent_30%),#050b10] text-slate-100">
       <PersonSchema />
@@ -280,53 +392,37 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="projects" className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
-        <Reveal>
-          <div className="mb-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">Side Projects</p>
-            <h2 className="text-3xl font-semibold text-white">Selected builds</h2>
-          </div>
-          <div className="grid gap-5 lg:grid-cols-1">
-            {projects.map((project) => (
-              <article key={project.title} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6 backdrop-blur-xl">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                    <p className="text-[#f2b84e]">{project.type}</p>
-                  </div>
-                </div>
-                
-                <p className="mt-4 max-w-3xl text-sm leading-8 text-slate-300">{project.summary}</p>
+  <section
+  id="projects"
+  className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12"
+>
 
-                {/* Key Features Block */}
-                {Array.isArray(project.features) && project.features.length > 0 && (
-                  <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.02] p-4">
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#8fe2d2]">
-                      Key Components & Capabilities
-                    </p>
-                    <ul className="space-y-2 text-xs leading-6 text-slate-300 sm:text-sm">
-                      {project.features.map((feat, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#f2b84e]" />
-                          <span>{feat}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+  <div className="mb-8">
+    <p className="text-sm uppercase tracking-[0.3em] text-[#8fe2d2]">
+      Side Projects
+    </p>
 
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-300">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
-        </Reveal>
-      </section>
+    <h2 className="text-3xl font-semibold text-white">
+      Applications I've Built
+    </h2>
+
+    <p className="mt-3 max-w-3xl text-slate-400">
+      From AI-powered healthcare assistants to enterprise-grade data
+      validation platforms, here are some of my favorite projects.
+    </p>
+  </div>
+
+
+  <div className="space-y-12">
+    {projects.map((project) => (
+      <ProjectCard
+        key={project.title}
+        project={project}
+      />
+    ))}
+  </div>
+
+</section>
 
       <section className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
         <Reveal>
