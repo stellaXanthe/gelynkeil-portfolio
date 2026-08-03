@@ -111,13 +111,14 @@ const projects = [
       "Engineered a privacy-first data quality platform and REST API built with Python, FastAPI, Next.js and Pytest. Built around zero data retention, automated backend testing, and interactive schema/row validation.",
 
     images: [
-      "/projects/data validator/sign-in.png",
       "/projects/data validator/landing.png",
+      "/projects/data validator/sign-in.png",
       "/projects/data validator/after-login.png",
       "/projects/data validator/setup.png",
+      "/projects/data validator/validator-help.png",
       "/projects/data validator/sample-validation-1.png",
       "/projects/data validator/sample-validation-2.png",
-      "/projects/data validator/validator-help.png",
+      
     ],
 
     liveUrl: "",
