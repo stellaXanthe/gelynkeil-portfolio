@@ -13,14 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gelynkeil-portfolio.vercel.app"),
   title: "Gelyn Keil Z. Dela Cruz | Software Quality Engineer",
   description:
-    "Portfolio site for Gelyn Keil Z. Dela Cruz, a results-driven Software Quality Engineer with experience in Agile quality strategy, automation, and reliability improvements.",
+    "Portfolio of Gelyn Keil Z. Dela Cruz, a results-driven Software Quality Engineer with 4+ years of experience in Agile quality strategy, test automation, and data validation engineering.",
+  keywords: [
+    "Gelyn Keil Dela Cruz",
+    "Gelyn Keil",
+    "Software Quality Engineer",
+    "QA Engineer Philippines",
+    "Test Automation Engineer",
+    "Data Quality Engineer",
+  ],
+  authors: [{ name: "Gelyn Keil Z. Dela Cruz" }],
+  creator: "Gelyn Keil Z. Dela Cruz",
   openGraph: {
     title: "Gelyn Keil Z. Dela Cruz | Software Quality Engineer",
     description:
-      "Portfolio site for Gelyn Keil Z. Dela Cruz, a results-driven Software Quality Engineer with experience in Agile quality strategy, automation, and reliability improvements.",
+      "Portfolio of Gelyn Keil Z. Dela Cruz, a results-driven Software Quality Engineer with 4+ years of experience in Agile quality strategy, test automation, and data validation engineering.",
     type: "website",
+    url: "https://gelynkeil-portfolio.vercel.app",
+    siteName: "Gelyn Keil Z. Dela Cruz Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gelyn Keil Z. Dela Cruz | Software Quality Engineer",
+    description:
+      "Portfolio of Gelyn Keil Z. Dela Cruz, a results-driven Software Quality Engineer.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

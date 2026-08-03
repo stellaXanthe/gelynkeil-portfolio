@@ -5,6 +5,7 @@ import ThreeScene from "./components/three-scene";
 import ContactForm from "./components/contact-form";
 import AiChat from "./components/ai-chat";
 import Image from "next/image";
+import PersonSchema from "./components/person-schema";
 
 const experience = [
   {
@@ -143,6 +144,7 @@ const projects = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(242,184,78,0.12),_transparent_30%),#050b10] text-slate-100">
+      <PersonSchema />
       <section className="mx-auto flex max-w-7xl flex-col px-5 py-6 sm:px-8 lg:px-10">
         <header className="sticky top-4 z-20 mb-8 rounded-full border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl">
           <nav className="flex flex-wrap items-center justify-between gap-3 text-sm text-slate-300">
@@ -180,7 +182,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link href="https://www.linkedin.com" target="_blank" className="rounded-full border border-[#8fe2d2]/30 bg-[#8fe2d2]/10 px-5 py-3 text-sm font-medium text-[#8fe2d2] transition hover:-translate-y-0.5 hover:bg-[#8fe2d2]/20">
+              <Link href="https://www.linkedin.com/in/gelyn-keil-z-dela-cruz/" target="_blank" className="rounded-full border border-[#8fe2d2]/30 bg-[#8fe2d2]/10 px-5 py-3 text-sm font-medium text-[#8fe2d2] transition hover:-translate-y-0.5 hover:bg-[#8fe2d2]/20">
                 Connect on LinkedIn
               </Link>
               <Link href="https://github.com/stellaXanthe" target="_blank" className="rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-slate-100 transition hover:-translate-y-0.5 hover:bg-white/10">
