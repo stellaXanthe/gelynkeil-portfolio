@@ -159,14 +159,14 @@ export default function Home() {
         <section className="grid items-center gap-8 pb-16 pt-6 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
           <div className="space-y-6">
             <span className="inline-flex rounded-full border border-[#f2b84e]/30 bg-[#f2b84e]/10 px-3 py-1 text-sm font-medium text-[#f2b84e]">
-              Software Quality Engineering
+              Quality Engineering | Full-Stack QA & Data Quality Engineer
             </span>
             <div className="space-y-4">
               <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">
                 Gelyn Keil Z. Dela Cruz
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-                Results-driven Software Quality Engineer with 4+ years&apos; experience improving product reliability in Agile teams.
+                Results-driven Quality Engineer with 4+ years&apos; experience improving product reliability in Agile teams.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-slate-300">
@@ -216,8 +216,12 @@ export default function Home() {
                   Trusted to strengthen quality, accelerate delivery, and raise confidence in every release.
                 </h2>
                 <p className="max-w-2xl text-base leading-8 text-slate-300">
-                  Results-driven Software Quality Engineer with 4+ years&apos; experience improving product reliability in Agile teams. Designed and executed test strategies and high-coverage test plans (98% coverage) and led regression and defect-triage efforts that reduced production bugs by 30% across 5+ projects. Proficient in Azure DevOps, Jira, SQL and Playwright; experienced mentoring junior QA, implementing process improvements, and applying AI tools (GitHub Copilot) to accelerate requirements analysis and test-case generation.
-                </p>
+                  Results-driven Quality Engineer with 4+ years of experience improving product reliability, testing maturity, and release stability across Agile teams. Experienced in designing test strategies, executing high-coverage test plans, leading regression and defect-triage efforts, and reducing production bugs by 30% across 5+ projects. Skilled in manual and automated testing, SQL/database validation, Azure DevOps, Jira, Playwright, shift-left quality practices, and cross-functional stakeholder collaboration.
+                  </p>
+                  <p>
+                    Expanded technical experience includes full-stack development, data engineering, AI-assisted coding, and AI-powered web solutions. Built and prototyped applications using Python, FastAPI, Next.js, TypeScript, Tailwind CSS, PostgreSQL, Databricks SQL, Pandas, PyArrow, .NET, Azure, Vercel, Three.js, and REST APIs. Proficient in applying GitHub Copilot, agentic AI, and vibe coding workflows to accelerate requirements analysis, test-case generation, data validation, automation, and product prototyping.
+                  </p>
+
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
                 <div className="rounded-2xl border border-[#f2b84e]/20 bg-[#f2b84e]/10 p-4">
