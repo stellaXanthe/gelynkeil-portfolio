@@ -113,8 +113,8 @@ const projects = [
     images: [
       "/projects/data validator/landing.png",
       "/projects/data validator/sign-in.png",
-      "/projects/data validator/after-login.png",
       "/projects/data validator/setup.png",
+      "/projects/data validator/after-login.png",
       "/projects/data validator/validator-help.png",
       "/projects/data validator/sample-validation-1.png",
       "/projects/data validator/sample-validation-2.png",
