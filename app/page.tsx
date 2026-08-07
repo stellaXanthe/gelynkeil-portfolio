@@ -103,6 +103,46 @@ const expertiseGroups = [
 
 
 const projects = [
+ {
+    title: "AssertGrid",
+    type: "Automated QA & Web Testing Platform - 2026",
+    summary:
+      "Engineered an end-to-end automated API and Web testing platform designed to execute multi-step endpoint evaluations, simulate browser actions, and provide real-time latency and status telemetry with bot-protection bypass engines.",
+    images: [
+      "/projects/assertgrid/login1.png", // Add your screenshot file paths here
+      "/projects/assertgrid/confirmlink.png",
+      "/projects/assertgrid/dashboard.png",
+      "/projects/assertgrid/assertgridaiassistant.png",
+      "/projects/assertgrid/createnewproject.png",
+      "/projects/assertgrid/dashboardnewproject.png",
+      "/projects/assertgrid/createnewtest.png",
+      "/projects/assertgrid/Step1-Web.png",
+      "/projects/assertgrid/runtest1.png",
+      "/projects/assertgrid/testresult.png",
+      "/projects/assertgrid/testresult2.png",
+    ],
+    features: [
+      "Dual Execution Engine — Smart routing between HTTP API fetches and Playwright web steps",
+      "Smart Step Resolution — Dynamic payload & step fallbacks for sequential workflows",
+      "Anti-Bot Bypass Engine — Injected Chrome header spoofing to bypass Vercel/Cloudflare 403 filters",
+      "Real-time Telemetry — Granular step status reporting with execution latency modal",
+      "Batch Test Runner — Sequential project-wide test suite execution",
+    ],
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "Supabase",
+      "Playwright",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+    liveUrl: "https://assertgrid.vercel.app", // optional
+    githubUrl: "https://github.com/gelynkeil/assertgrid", // optional
+  },
+ 
+ 
+ 
+ 
   {
     title: "Multi-Source Data Validation Engine",
     type: "Full-Stack Data Quality Platform • 2026",
