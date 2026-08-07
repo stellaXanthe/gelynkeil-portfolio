@@ -121,6 +121,7 @@ const projects = [
       "/projects/assertgrid/testresult2.png",
     ],
     features: [
+      "Groq AI Assistant — Integrated LLM chatbot for automated test generation and failure debugging",
       "Dual Execution Engine — Smart routing between HTTP API fetches and Playwright web steps",
       "Smart Step Resolution — Dynamic payload & step fallbacks for sequential workflows",
       "Anti-Bot Bypass Engine — Injected Chrome header spoofing to bypass Vercel/Cloudflare 403 filters",
@@ -130,13 +131,14 @@ const projects = [
     tech: [
       "Next.js 15",
       "TypeScript",
+      "Groq API (LLM)",
       "Supabase",
       "Playwright",
       "Tailwind CSS",
       "Shadcn UI",
     ],
-    liveUrl: "https://assertgrid.vercel.app", // optional
-    githubUrl: "https://github.com/gelynkeil/assertgrid", // optional
+    liveUrl: "", // optional
+    githubUrl: "", // optional
   },
  
  
