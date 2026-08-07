@@ -115,7 +115,6 @@ const projects = [
       "/projects/assertgrid/assertgridaiassistant.png",
       "/projects/assertgrid/createnewproject.png",
       "/projects/assertgrid/dashboardnewproject.png",
-      "/projects/assertgrid/createnewtest.png",
       "/projects/assertgrid/Step1-Web.png",
       "/projects/assertgrid/runtest1.png",
       "/projects/assertgrid/testresult.png",
