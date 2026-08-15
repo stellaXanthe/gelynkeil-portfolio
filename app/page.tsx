@@ -316,9 +316,9 @@ export default function Home() {
               Quality Engineering | Full-Stack QA & Data Quality Engineer
             </span>
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
-                Gelyn Keil Z. Dela Cruz
-              </h1>
+             <h1 className="text-[clamp(1.75rem,3.5vw,3rem)] font-bold tracking-tight text-slate-900 whitespace-nowrap">
+  Gelyn Keil Z. Dela Cruz
+</h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
                 Results-driven Quality Engineer with almost 5 years&apos; of experience improving product reliability in Agile teams.
               </p>
