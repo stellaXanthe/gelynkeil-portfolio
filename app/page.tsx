@@ -202,6 +202,12 @@ const projects = [
 
     images: [
       "/projects/ai-competitor-price-watch/ai-competitorpricewatch.png",
+      "/projects/ai-competitor-price-watch/marketwatch.png",
+      "/projects/ai-competitor-price-watch/MW2.png",
+      "/projects/ai-competitor-price-watch/MW3.png",
+      "/projects/ai-competitor-price-watch/MW4.png",
+      "/projects/ai-competitor-price-watch/MW5.png",
+      "/projects/ai-competitor-price-watch/MW6.png",
     ],
 
     liveUrl: "",
