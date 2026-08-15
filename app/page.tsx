@@ -125,7 +125,7 @@ const projects = [
     ],
     features: [
       "Groq AI Assistant — Integrated LLM chatbot for automated test generation and failure debugging",
-      "Docker Containerization: Isolated, containerized runner environments ensuring consistent and reproducible browser testing across environments.",
+      "Docker Containerization — Isolated, containerized runner environments ensuring consistent and reproducible browser testing across environments.",
       "Dual Execution Engine — Smart routing between HTTP API fetches and Playwright web steps",
       "Smart Step Resolution — Dynamic payload & step fallbacks for sequential workflows",
       "Anti-Bot Bypass Engine — Injected Chrome header spoofing to bypass Vercel/Cloudflare 403 filters",
