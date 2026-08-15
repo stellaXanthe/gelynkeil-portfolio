@@ -287,48 +287,48 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <PersonSchema />
-      <section className="mx-auto flex max-w-7xl flex-col px-5 py-6 sm:px-8 lg:px-10">
-        <header className="sticky top-4 z-20 mb-8 rounded-full border border-slate-200 bg-white/80 px-6 py-3 shadow-sm backdrop-blur-md">
+      <section className="mx-auto flex max-w-[90rem] flex-col px-5 py-6 sm:px-8 lg:px-12">
+        <header className="sticky top-4 z-20 mb-8 rounded-full border border-slate-200 bg-white/80 px-8 py-3.5 shadow-sm backdrop-blur-md">
           <nav className="flex flex-wrap items-center justify-between gap-3 text-sm font-medium text-slate-700">
             <div className="font-bold tracking-widest text-slate-900 uppercase">
               Gelyn Keil
             </div>
-            <div className="flex flex-wrap gap-6">
-              <a href="#about" className="transition hover:text-blue-600">
+            <div className="flex flex-wrap gap-8">
+              <a href="#about" className="transition hover:text-slate-950 font-semibold">
                 About
               </a>
-              <a href="#experience" className="transition hover:text-blue-600">
+              <a href="#experience" className="transition hover:text-slate-950 font-semibold">
                 Experience
               </a>
-              <a href="#projects" className="transition hover:text-blue-600">
+              <a href="#projects" className="transition hover:text-slate-950 font-semibold">
                 Projects
               </a>
-              <a href="#contact" className="transition hover:text-blue-600">
+              <a href="#contact" className="transition hover:text-slate-950 font-semibold">
                 Contact
               </a>
             </div>
           </nav>
         </header>
 
-        <section className="grid items-center gap-8 pb-16 pt-6 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
+        <section className="grid items-center gap-10 pb-16 pt-6 lg:grid-cols-[1.2fr_0.8fr] lg:pb-24">
           <div className="space-y-6">
-            <span className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1 text-xs font-semibold text-blue-700">
+            <span className="inline-flex rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-900">
               Quality Engineering | Full-Stack QA & Data Quality Engineer
             </span>
             <div className="space-y-4">
-             <h1 className="text-[clamp(1.75rem,3.5vw,3rem)] font-bold tracking-tight text-slate-900 whitespace-nowrap">
-  Gelyn Keil Z. Dela Cruz
-</h1>
-              <p className="max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+              <h1 className="text-[clamp(1.75rem,3.5vw,3rem)] font-bold tracking-tight text-slate-900 whitespace-nowrap">
+                Gelyn Keil Z. Dela Cruz
+              </h1>
+              <p className="max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
                 Results-driven Quality Engineer with almost 5 years&apos; of experience improving product reliability in Agile teams.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-slate-600">
-              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+              <div className="rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-sm">
                 <div className="font-semibold text-slate-900">Philippines</div>
                 <div>Based in the Philippines</div>
               </div>
-              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+              <div className="rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-sm">
                 <div className="font-semibold text-slate-900">Contact</div>
                 <div>gelynkeil.delacruz@gmail.com</div>
               </div>
@@ -337,20 +337,20 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/gelyn-keil-z-dela-cruz/"
                 target="_blank"
-                className="rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700"
+                className="rounded-full bg-slate-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800"
               >
                 Connect on LinkedIn
               </Link>
               <Link
                 href="https://github.com/stellaXanthe"
                 target="_blank"
-                className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
               >
                 GitHub: stellaXanthe
               </Link>
               <a
                 href="mailto:gelynkeil.delacruz@gmail.com"
-                className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
               >
                 Email Me
               </a>
@@ -360,8 +360,8 @@ export default function Home() {
           <Reveal className="w-full">
             <div className="space-y-4">
               <ThreeScene />
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 text-sm text-slate-600 shadow-sm">
-                <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+              <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-sm">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                   Quality signal
                 </p>
                 <p className="mt-2 leading-7 text-slate-700 font-medium">
@@ -373,48 +373,48 @@ export default function Home() {
         </section>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
+      <section id="about" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm sm:p-10 lg:p-12">
+            <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
               <div className="space-y-4">
-                <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                   Professional Summary
                 </p>
                 <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
                   Trusted to strengthen quality, accelerate delivery, and raise confidence in every release.
                 </h2>
-                <p className="max-w-2xl text-base leading-8 text-slate-600">
+                <p className="max-w-3xl text-base leading-8 text-slate-600">
                   Results-driven Quality Engineer with almost 5 years of experience improving product reliability, testing maturity, and release stability across Agile teams. Experienced in designing test strategies, executing high-coverage test plans, leading regression and defect-triage efforts, and reducing production bugs by 30% across 5+ projects. Skilled in manual and automated testing, SQL/database validation, Azure DevOps, Jira, Playwright, shift-left quality practices, and cross-functional stakeholder collaboration.
                 </p>
-                <p className="max-w-2xl text-base leading-8 text-slate-600">
+                <p className="max-w-3xl text-base leading-8 text-slate-600">
                   Expanded technical experience includes full-stack development, data engineering, AI-assisted coding, and AI-powered web solutions. Built and prototyped applications using Python, FastAPI, Next.js, TypeScript, Tailwind CSS, PostgreSQL, Databricks SQL, Pandas, PyArrow, .NET, Azure, Vercel, Three.js, and REST APIs. Proficient in applying GitHub Copilot, agentic AI, and efficient workflows to accelerate requirements analysis, test-case generation, data validation, automation, and product prototyping.
                 </p>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5">
-                  <div className="text-3xl font-bold text-blue-600">
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-200 bg-slate-100/60 p-6">
+                  <div className="text-4xl font-bold text-slate-900">
                     <AnimatedCounter value={98} suffix="%" />
                   </div>
-                  <div className="mt-1 text-sm font-medium text-slate-600">Test coverage</div>
+                  <div className="mt-2 text-sm font-semibold text-slate-700">Test coverage</div>
                 </div>
-                <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5">
-                  <div className="text-3xl font-bold text-blue-600">
+                <div className="rounded-2xl border border-slate-200 bg-slate-100/60 p-6">
+                  <div className="text-4xl font-bold text-slate-900">
                     <AnimatedCounter value={30} suffix="%" />
                   </div>
-                  <div className="mt-1 text-sm font-medium text-slate-600">Bug reduction</div>
+                  <div className="mt-2 text-sm font-semibold text-slate-700">Bug reduction</div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div className="text-3xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                  <div className="text-4xl font-bold text-slate-900">
                     <AnimatedCounter value={4} suffix="+" />
                   </div>
-                  <div className="mt-1 text-sm font-medium text-slate-600">Years of experience</div>
+                  <div className="mt-2 text-sm font-semibold text-slate-700">Years of experience</div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div className="text-3xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                  <div className="text-4xl font-bold text-slate-900">
                     <AnimatedCounter value={5} suffix="+" />
                   </div>
-                  <div className="mt-1 text-sm font-medium text-slate-600">Projects delivered</div>
+                  <div className="mt-2 text-sm font-semibold text-slate-700">Projects delivered</div>
                 </div>
               </div>
             </div>
@@ -422,30 +422,30 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="experience" className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
+      <section id="experience" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="mb-6 flex items-end justify-between gap-3">
+          <div className="mb-8 flex items-end justify-between gap-3">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                 Experience
               </p>
               <h2 className="text-3xl font-bold text-slate-900">Professional journey</h2>
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-6">
             {experience.map((item) => (
-              <article key={item.role} className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+              <article key={item.role} className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">{item.role}</h3>
-                    <p className="font-semibold text-blue-600">{item.company}</p>
+                    <h3 className="text-2xl font-bold text-slate-900">{item.role}</h3>
+                    <p className="font-semibold text-slate-900">{item.company}</p>
                   </div>
-                  <div className="text-sm font-medium text-slate-500">{item.period}</div>
+                  <div className="text-sm font-semibold text-slate-500">{item.period}</div>
                 </div>
-                <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+                <ul className="mt-6 space-y-3.5 text-sm leading-7 text-slate-600">
                   {item.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-3">
-                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-blue-600" />
+                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-slate-900" />
                       <span>{bullet}</span>
                     </li>
                   ))}
@@ -456,9 +456,9 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="projects" className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
+      <section id="projects" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <div className="mb-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
             Side Projects
           </p>
           <h2 className="text-3xl font-bold text-slate-900">
@@ -476,22 +476,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
+      <section className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
-            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr]">
+            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                 Expertise
               </p>
               <h2 className="mt-2 text-3xl font-bold text-slate-900">Areas of strength</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
+              <div className="mt-6 grid gap-5 md:grid-cols-2">
                 {expertiseGroups.map((group) => (
-                  <div key={group.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div key={group.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
                     <h3 className="text-lg font-bold text-slate-900">{group.title}</h3>
-                    <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                    <ul className="mt-3.5 space-y-2.5 text-sm text-slate-600">
                       {group.items.map((item) => (
-                        <li key={item} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-600" />
+                        <li key={item} className="flex gap-2.5">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -501,42 +501,42 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                 Education & Certifications
               </p>
-              <div className="mt-5 space-y-6 text-sm leading-7 text-slate-600">
+              <div className="mt-6 space-y-6 text-sm leading-7 text-slate-600">
                 <div>
                   <h3 className="font-bold text-slate-900 text-base">Bachelor in Business Management</h3>
                   <p>Major in Marketing Management — Cavite State University, 2020</p>
                 </div>
-                <div className="pt-2 border-t border-slate-100">
+                <div className="pt-4 border-t border-slate-100">
                   <h3 className="font-bold text-slate-900 text-base">Airtable Admin Certification</h3>
                   <p>Airtable Academy — 2026</p>
-                  <a href="/certifications/airtable-admin.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-blue-500">
+                  <a href="/certifications/airtable-admin.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
                     <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 transition hover:underline">
+                  <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
                     Show Credential
                   </a>
                 </div>
-                <div className="pt-2 border-t border-slate-100">
+                <div className="pt-4 border-t border-slate-100">
                   <h3 className="font-bold text-slate-900 text-base">AZ-900: Microsoft Azure Fundamentals</h3>
                   <p>Microsoft — 2022</p>
-                  <a href="/certifications/az-900.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-blue-500">
+                  <a href="/certifications/az-900.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
                     <Image src="/certifications/az-900.png" alt="AZ-900 Microsoft Azure Fundamentals certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 transition hover:underline">
+                  <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
                     Show Credential
                   </a>
                 </div>
-                <div className="pt-2 border-t border-slate-100">
+                <div className="pt-4 border-t border-slate-100">
                   <h3 className="font-bold text-slate-900 text-base">Databricks Certified Data Engineer Associate</h3>
                   <p>Databricks — 2024</p>
-                  <a href="/certifications/databricks.png" target="_blank" className="mt-2 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-blue-500">
+                  <a href="/certifications/databricks.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
                     <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 transition hover:underline">
+                  <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
                     Show Credential
                   </a>
                 </div>
@@ -546,12 +546,12 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="contact" className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12">
+      <section id="contact" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="rounded-[2rem] border border-blue-100 bg-blue-50/60 p-8 shadow-sm sm:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
+          <div className="rounded-[2rem] border border-slate-300 bg-slate-100/80 p-8 shadow-sm sm:p-10 lg:p-12">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
                   Contact
                 </p>
                 <h2 className="mt-2 text-3xl font-bold text-slate-900">
@@ -560,23 +560,23 @@ export default function Home() {
                 <p className="mt-3 max-w-2xl text-sm leading-8 text-slate-600">
                   Reach out for quality engineering strategy, automation mentorship, or product reliability leadership support.
                 </p>
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-8 flex flex-wrap gap-3.5">
                   <a
                     href="mailto:gelynkeil.delacruz@gmail.com"
-                    className="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800"
+                    className="rounded-full bg-slate-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800"
                   >
                     gelynkeil.delacruz@gmail.com
                   </a>
                   <a
                     href="tel:+639206649886"
-                    className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                    className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
                   >
                     +63 920 664 9886
                   </a>
                   <a
                     href="https://github.com/stellaXanthe"
                     target="_blank"
-                    className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                    className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
                   >
                     github.com/stellaXanthe
                   </a>
@@ -588,7 +588,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <footer className="mx-auto max-w-7xl px-5 pb-10 pt-4 text-center text-sm font-medium text-slate-500 sm:px-8 lg:px-10">
+      <footer className="mx-auto max-w-[90rem] px-5 pb-10 pt-4 text-center text-sm font-medium text-slate-500 sm:px-8 lg:px-12">
         © 2026 Gelyn Keil Z. Dela Cruz. Crafted for thoughtful software quality engineering.
       </footer>
 

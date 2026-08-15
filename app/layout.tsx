@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gelyn Keil Z. Dela Cruz - Portfolio",
-  description: "Results-driven Quality Engineer with almost 5 years' of experience.",
+  description: "Results-driven Quality Engineer with almost 5 years' experience in Agile QA, test automation, and software engineering.",
 };
 
 export default function RootLayout({
@@ -24,12 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-slate-50 text-slate-900`}
       >
         {children}
-        <ScrollToTop />
       </body>
     </html>
   );
