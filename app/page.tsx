@@ -288,27 +288,31 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <PersonSchema />
       <section className="mx-auto flex max-w-[90rem] flex-col px-5 py-6 sm:px-8 lg:px-12">
-        <header className="sticky top-4 z-20 mb-8 rounded-full border border-slate-200 bg-white/80 px-8 py-3.5 shadow-sm backdrop-blur-md">
-          <nav className="flex flex-wrap items-center justify-between gap-3 text-sm font-medium text-slate-700">
-            <div className="font-bold tracking-widest text-slate-900 uppercase">
-              Gelyn Keil
-            </div>
-            <div className="flex flex-wrap gap-8">
-              <a href="#about" className="transition hover:text-slate-950 font-semibold">
-                About
-              </a>
-              <a href="#experience" className="transition hover:text-slate-950 font-semibold">
-                Experience
-              </a>
-              <a href="#projects" className="transition hover:text-slate-950 font-semibold">
-                Projects
-              </a>
-              <a href="#contact" className="transition hover:text-slate-950 font-semibold">
-                Contact
-              </a>
-            </div>
-          </nav>
-        </header>
+       <header className="sticky top-4 z-40 mb-8 rounded-full border border-slate-200 bg-white/80 px-5 py-3 shadow-sm backdrop-blur-md sm:px-8">
+  <div className="flex items-center justify-between gap-3 text-sm font-medium text-slate-700">
+    {/* Brand / Logo */}
+    <div className="shrink-0 font-bold tracking-widest text-slate-900 uppercase text-xs sm:text-sm">
+      Gelyn Keil
+    </div>
+
+    {/* Nav Links - Force Single Line on Mobile */}
+    <nav className="flex items-center gap-3 sm:gap-6 overflow-x-auto whitespace-nowrap text-xs sm:text-sm [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+      <a href="#about" className="shrink-0 transition hover:text-slate-900">
+        About
+      </a>
+      <a href="#experience" className="shrink-0 transition hover:text-slate-900">
+        Experience
+      </a>
+      <a href="#projects" className="shrink-0 transition hover:text-slate-900">
+        Projects
+      </a>
+      <a href="#contact" className="shrink-0 transition hover:text-slate-900">
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
+        
 
         <section className="grid items-center gap-10 pb-16 pt-6 lg:grid-cols-[1.2fr_0.8fr] lg:pb-24">
           <div className="space-y-6">
