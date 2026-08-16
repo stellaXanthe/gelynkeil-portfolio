@@ -285,55 +285,54 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-[#a2bffe] text-[#091e42]">
       <PersonSchema />
       <section className="mx-auto flex max-w-[90rem] flex-col px-5 py-6 sm:px-8 lg:px-12">
-       <header className="sticky top-4 z-40 mb-8 rounded-full border border-slate-200 bg-white/80 px-5 py-3 shadow-sm backdrop-blur-md sm:px-8">
-  <div className="flex items-center justify-between gap-3 text-sm font-medium text-slate-700">
-    {/* Brand / Logo */}
-    <div className="shrink-0 font-bold tracking-widest text-slate-900 uppercase text-xs sm:text-sm">
-      Gelyn Keil
-    </div>
+        <header className="sticky top-4 z-40 mb-8 rounded-full border border-[#091e42]/20 bg-white/80 px-6 py-3.5 shadow-md backdrop-blur-md">
+          <div className="flex items-center justify-between gap-4 text-sm font-semibold text-[#091e42]">
+            {/* Brand / Logo */}
+            <div className="shrink-0 font-extrabold tracking-widest text-[#091e42] uppercase text-xs sm:text-sm">
+              Gelyn Keil
+            </div>
 
-    {/* Nav Links - Force Single Line on Mobile */}
-    <nav className="flex items-center gap-3 sm:gap-6 overflow-x-auto whitespace-nowrap text-xs sm:text-sm [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-      <a href="#about" className="shrink-0 transition hover:text-slate-900">
-        About
-      </a>
-      <a href="#experience" className="shrink-0 transition hover:text-slate-900">
-        Experience
-      </a>
-      <a href="#projects" className="shrink-0 transition hover:text-slate-900">
-        Projects
-      </a>
-      <a href="#contact" className="shrink-0 transition hover:text-slate-900">
-        Contact
-      </a>
-    </nav>
-  </div>
-</header>
-        
+            {/* Nav Links */}
+            <nav className="flex items-center gap-4 sm:gap-8 overflow-x-auto whitespace-nowrap text-xs sm:text-sm [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+              <a href="#about" className="shrink-0 transition hover:text-[#0052cc]">
+                About
+              </a>
+              <a href="#experience" className="shrink-0 transition hover:text-[#0052cc]">
+                Experience
+              </a>
+              <a href="#projects" className="shrink-0 transition hover:text-[#0052cc]">
+                Projects
+              </a>
+              <a href="#contact" className="shrink-0 transition hover:text-[#0052cc]">
+                Contact
+              </a>
+            </nav>
+          </div>
+        </header>
 
         <section className="grid items-center gap-10 pb-16 pt-6 lg:grid-cols-[1.2fr_0.8fr] lg:pb-24">
           <div className="space-y-6">
-            <span className="inline-flex rounded-full border border-slate-300 bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-900">
+            <span className="inline-flex rounded-full border border-[#091e42]/20 bg-white/80 px-4 py-1.5 text-xs font-bold text-[#091e42] shadow-sm">
               Quality Engineering | Full-Stack QA & Data Quality Engineer
             </span>
             <div className="space-y-4">
-              <h1 className="text-[clamp(1.75rem,3.5vw,3rem)] font-bold tracking-tight text-slate-900 whitespace-nowrap">
+              <h1 className="text-[clamp(1.85rem,3.8vw,3.2rem)] font-extrabold tracking-tight text-[#091e42] whitespace-nowrap">
                 Gelyn Keil Z. Dela Cruz
               </h1>
-              <p className="max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
-                Results-driven Quality Engineer with almost 5 years&apos; of experience improving product reliability in Agile teams.
+              <p className="max-w-3xl text-lg font-medium leading-8 text-[#172b4d] sm:text-xl">
+                Results-driven Quality Engineer with almost 5 years&apos; experience improving product reliability in Agile teams.
               </p>
             </div>
-            <div className="flex flex-wrap gap-4 text-sm text-slate-600">
-              <div className="rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-sm">
-                <div className="font-semibold text-slate-900">Philippines</div>
+            <div className="flex flex-wrap gap-4 text-sm text-[#172b4d]">
+              <div className="rounded-2xl border border-[#091e42]/15 bg-white/70 px-5 py-3.5 shadow-sm">
+                <div className="font-bold text-[#091e42]">Location</div>
                 <div>Based in the Philippines</div>
               </div>
-              <div className="rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-sm">
-                <div className="font-semibold text-slate-900">Contact</div>
+              <div className="rounded-2xl border border-[#091e42]/15 bg-white/70 px-5 py-3.5 shadow-sm">
+                <div className="font-bold text-[#091e42]">Contact</div>
                 <div>gelynkeil.delacruz@gmail.com</div>
               </div>
             </div>
@@ -341,20 +340,20 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/gelyn-keil-z-dela-cruz/"
                 target="_blank"
-                className="rounded-full bg-slate-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800"
+                className="rounded-full bg-[#091e42] px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#0052cc]"
               >
                 Connect on LinkedIn
               </Link>
               <Link
                 href="https://github.com/stellaXanthe"
                 target="_blank"
-                className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                className="rounded-full border border-[#091e42]/20 bg-white/80 px-6 py-3.5 text-sm font-bold text-[#091e42] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 GitHub: stellaXanthe
               </Link>
               <a
                 href="mailto:gelynkeil.delacruz@gmail.com"
-                className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                className="rounded-full border border-[#091e42]/20 bg-white/80 px-6 py-3.5 text-sm font-bold text-[#091e42] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Email Me
               </a>
@@ -364,12 +363,12 @@ export default function Home() {
           <Reveal className="w-full">
             <div className="space-y-4">
               <ThreeScene />
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-sm">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
-                  Quality signal
+              <div className="rounded-[1.5rem] border border-[#091e42]/15 bg-white/80 p-6 text-sm shadow-sm">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
+                  Quality Signal
                 </p>
-                <p className="mt-2 leading-7 text-slate-700 font-medium">
-                  A precise, test-first approach with a focus on release stability, intelligent automation, and collaborative problem-solving.
+                <p className="mt-2 leading-7 text-[#172b4d] font-medium">
+                  A precise, test-first approach focused on release stability, intelligent automation, and collaborative problem-solving.
                 </p>
               </div>
             </div>
@@ -379,46 +378,46 @@ export default function Home() {
 
       <section id="about" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm sm:p-10 lg:p-12">
+          <div className="rounded-[2rem] border border-[#091e42]/15 bg-white/80 p-8 shadow-sm sm:p-10 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
               <div className="space-y-4">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
                   Professional Summary
                 </p>
-                <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold text-[#091e42] sm:text-4xl">
                   Trusted to strengthen quality, accelerate delivery, and raise confidence in every release.
                 </h2>
-                <p className="max-w-3xl text-base leading-8 text-slate-600">
+                <p className="max-w-3xl text-base leading-8 text-[#172b4d]">
                   Results-driven Quality Engineer with almost 5 years of experience improving product reliability, testing maturity, and release stability across Agile teams. Experienced in designing test strategies, executing high-coverage test plans, leading regression and defect-triage efforts, and reducing production bugs by 30% across 5+ projects. Skilled in manual and automated testing, SQL/database validation, Azure DevOps, Jira, Playwright, shift-left quality practices, and cross-functional stakeholder collaboration.
                 </p>
-                <p className="max-w-3xl text-base leading-8 text-slate-600">
+                <p className="max-w-3xl text-base leading-8 text-[#172b4d]">
                   Expanded technical experience includes full-stack development, data engineering, AI-assisted coding, and AI-powered web solutions. Built and prototyped applications using Python, FastAPI, Next.js, TypeScript, Tailwind CSS, PostgreSQL, Databricks SQL, Pandas, PyArrow, .NET, Azure, Vercel, Three.js, and REST APIs. Proficient in applying GitHub Copilot, agentic AI, and efficient workflows to accelerate requirements analysis, test-case generation, data validation, automation, and product prototyping.
                 </p>
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
-                <div className="rounded-2xl border border-slate-200 bg-slate-100/60 p-6">
-                  <div className="text-4xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-[#091e42]/15 bg-white p-6 shadow-xs">
+                  <div className="text-4xl font-extrabold text-[#091e42]">
                     <AnimatedCounter value={98} suffix="%" />
                   </div>
-                  <div className="mt-2 text-sm font-semibold text-slate-700">Test coverage</div>
+                  <div className="mt-2 text-sm font-bold text-[#172b4d]">Test coverage</div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-100/60 p-6">
-                  <div className="text-4xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-[#091e42]/15 bg-white p-6 shadow-xs">
+                  <div className="text-4xl font-extrabold text-[#091e42]">
                     <AnimatedCounter value={30} suffix="%" />
                   </div>
-                  <div className="mt-2 text-sm font-semibold text-slate-700">Bug reduction</div>
+                  <div className="mt-2 text-sm font-bold text-[#172b4d]">Bug reduction</div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                  <div className="text-4xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-[#091e42]/15 bg-white/60 p-6 shadow-xs">
+                  <div className="text-4xl font-extrabold text-[#091e42]">
                     <AnimatedCounter value={4} suffix="+" />
                   </div>
-                  <div className="mt-2 text-sm font-semibold text-slate-700">Years of experience</div>
+                  <div className="mt-2 text-sm font-bold text-[#172b4d]">Years of experience</div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                  <div className="text-4xl font-bold text-slate-900">
+                <div className="rounded-2xl border border-[#091e42]/15 bg-white/60 p-6 shadow-xs">
+                  <div className="text-4xl font-extrabold text-[#091e42]">
                     <AnimatedCounter value={5} suffix="+" />
                   </div>
-                  <div className="mt-2 text-sm font-semibold text-slate-700">Projects delivered</div>
+                  <div className="mt-2 text-sm font-bold text-[#172b4d]">Projects delivered</div>
                 </div>
               </div>
             </div>
@@ -430,26 +429,26 @@ export default function Home() {
         <Reveal>
           <div className="mb-8 flex items-end justify-between gap-3">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
                 Experience
               </p>
-              <h2 className="text-3xl font-bold text-slate-900">Professional journey</h2>
+              <h2 className="text-3xl font-extrabold text-[#091e42]">Professional Journey</h2>
             </div>
           </div>
           <div className="space-y-6">
             {experience.map((item) => (
-              <article key={item.role} className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
+              <article key={item.role} className="rounded-[1.75rem] border border-[#091e42]/15 bg-white/80 p-8 shadow-sm">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900">{item.role}</h3>
-                    <p className="font-semibold text-slate-900">{item.company}</p>
+                    <h3 className="text-2xl font-bold text-[#091e42]">{item.role}</h3>
+                    <p className="font-semibold text-[#0052cc]">{item.company}</p>
                   </div>
-                  <div className="text-sm font-semibold text-slate-500">{item.period}</div>
+                  <div className="text-sm font-bold text-[#172b4d]">{item.period}</div>
                 </div>
-                <ul className="mt-6 space-y-3.5 text-sm leading-7 text-slate-600">
+                <ul className="mt-6 space-y-3.5 text-sm leading-7 text-[#172b4d]">
                   {item.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-3">
-                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-slate-900" />
+                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#091e42]" />
                       <span>{bullet}</span>
                     </li>
                   ))}
@@ -462,13 +461,13 @@ export default function Home() {
 
       <section id="projects" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <div className="mb-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
             Side Projects
           </p>
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="text-3xl font-extrabold text-[#091e42]">
             Applications I&apos;ve Built
           </h2>
-          <p className="mt-3 max-w-3xl text-slate-600">
+          <p className="mt-3 max-w-3xl text-[#172b4d] font-medium">
             From AI-powered healthcare assistants to enterprise-grade data validation platforms, here are some of my favorite projects.
           </p>
         </div>
@@ -483,19 +482,19 @@ export default function Home() {
       <section className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
           <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr]">
-            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+            <div className="rounded-[1.75rem] border border-[#091e42]/15 bg-white/80 p-8 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
                 Expertise
               </p>
-              <h2 className="mt-2 text-3xl font-bold text-slate-900">Areas of strength</h2>
+              <h2 className="mt-2 text-3xl font-extrabold text-[#091e42]">Areas of Strength</h2>
               <div className="mt-6 grid gap-5 md:grid-cols-2">
                 {expertiseGroups.map((group) => (
-                  <div key={group.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                    <h3 className="text-lg font-bold text-slate-900">{group.title}</h3>
-                    <ul className="mt-3.5 space-y-2.5 text-sm text-slate-600">
+                  <div key={group.title} className="rounded-2xl border border-[#091e42]/10 bg-white p-5 shadow-xs">
+                    <h3 className="text-lg font-bold text-[#091e42]">{group.title}</h3>
+                    <ul className="mt-3.5 space-y-2.5 text-sm text-[#172b4d]">
                       {group.items.map((item) => (
                         <li key={item} className="flex gap-2.5">
-                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900" />
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#091e42]" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -505,42 +504,42 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+            <div className="rounded-[1.75rem] border border-[#091e42]/15 bg-white/80 p-8 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
                 Education & Certifications
               </p>
-              <div className="mt-6 space-y-6 text-sm leading-7 text-slate-600">
+              <div className="mt-6 space-y-6 text-sm leading-7 text-[#172b4d]">
                 <div>
-                  <h3 className="font-bold text-slate-900 text-base">Bachelor in Business Management</h3>
+                  <h3 className="font-bold text-[#091e42] text-base">Bachelor in Business Management</h3>
                   <p>Major in Marketing Management — Cavite State University, 2020</p>
                 </div>
-                <div className="pt-4 border-t border-slate-100">
-                  <h3 className="font-bold text-slate-900 text-base">Airtable Admin Certification</h3>
+                <div className="pt-4 border-t border-[#091e42]/15">
+                  <h3 className="font-bold text-[#091e42] text-base">Airtable Admin Certification</h3>
                   <p>Airtable Academy — 2026</p>
-                  <a href="/certifications/airtable-admin.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
+                  <a href="/certifications/airtable-admin.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-[#091e42]/20 transition hover:border-[#091e42]">
                     <Image src="/certifications/airtable-admin.png" alt="Airtable Admin Certification certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
+                  <a href="https://verify.skilljar.com/c/p7ckip3mtovq" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#0052cc] transition hover:underline">
                     Show Credential
                   </a>
                 </div>
-                <div className="pt-4 border-t border-slate-100">
-                  <h3 className="font-bold text-slate-900 text-base">AZ-900: Microsoft Azure Fundamentals</h3>
+                <div className="pt-4 border-t border-[#091e42]/15">
+                  <h3 className="font-bold text-[#091e42] text-base">AZ-900: Microsoft Azure Fundamentals</h3>
                   <p>Microsoft — 2022</p>
-                  <a href="/certifications/az-900.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
+                  <a href="/certifications/az-900.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-[#091e42]/20 transition hover:border-[#091e42]">
                     <Image src="/certifications/az-900.png" alt="AZ-900 Microsoft Azure Fundamentals certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
+                  <a href="https://learn.microsoft.com/en-us/users/gelynkeildelacruz-2350/credentials/f8ccbc2d00fdc405" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#0052cc] transition hover:underline">
                     Show Credential
                   </a>
                 </div>
-                <div className="pt-4 border-t border-slate-100">
-                  <h3 className="font-bold text-slate-900 text-base">Databricks Certified Data Engineer Associate</h3>
+                <div className="pt-4 border-t border-[#091e42]/15">
+                  <h3 className="font-bold text-[#091e42] text-base">Databricks Certified Data Engineer Associate</h3>
                   <p>Databricks — 2024</p>
-                  <a href="/certifications/databricks.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-slate-200 transition hover:border-slate-900">
+                  <a href="/certifications/databricks.png" target="_blank" className="mt-3 block overflow-hidden rounded-xl border border-[#091e42]/20 transition hover:border-[#091e42]">
                     <Image src="/certifications/databricks.png" alt="Databricks Certified Data Engineer Associate certificate" width={400} height={300} className="h-auto w-full" />
                   </a>
-                  <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 transition hover:underline">
+                  <a href="https://credentials.databricks.com/fb411254-644c-4992-8389-e556c771db8f#acc.SLYVmfAD" target="_blank" rel="noopener noreferrer" className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#0052cc] transition hover:underline">
                     Show Credential
                   </a>
                 </div>
@@ -552,35 +551,35 @@ export default function Home() {
 
       <section id="contact" className="mx-auto max-w-[90rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <Reveal>
-          <div className="rounded-[2rem] border border-slate-300 bg-slate-100/80 p-8 shadow-sm sm:p-10 lg:p-12">
+          <div className="rounded-[2rem] border border-[#091e42]/15 bg-white/80 p-8 shadow-sm sm:p-10 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-900">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#091e42]">
                   Contact
                 </p>
-                <h2 className="mt-2 text-3xl font-bold text-slate-900">
+                <h2 className="mt-2 text-3xl font-extrabold text-[#091e42]">
                   Let&apos;s build reliable software together.
                 </h2>
-                <p className="mt-3 max-w-2xl text-sm leading-8 text-slate-600">
+                <p className="mt-3 max-w-2xl text-sm leading-8 text-[#172b4d]">
                   Reach out for quality engineering strategy, automation mentorship, or product reliability leadership support.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3.5">
                   <a
                     href="mailto:gelynkeil.delacruz@gmail.com"
-                    className="rounded-full bg-slate-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800"
+                    className="rounded-full bg-[#091e42] px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#0052cc]"
                   >
                     gelynkeil.delacruz@gmail.com
                   </a>
                   <a
                     href="tel:+639206649886"
-                    className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                    className="rounded-full border border-[#091e42]/20 bg-white/80 px-6 py-3.5 text-sm font-bold text-[#091e42] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                   >
                     +63 920 664 9886
                   </a>
                   <a
                     href="https://github.com/stellaXanthe"
                     target="_blank"
-                    className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100"
+                    className="rounded-full border border-[#091e42]/20 bg-white/80 px-6 py-3.5 text-sm font-bold text-[#091e42] shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
                   >
                     github.com/stellaXanthe
                   </a>
@@ -592,7 +591,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <footer className="mx-auto max-w-[90rem] px-5 pb-10 pt-4 text-center text-sm font-medium text-slate-500 sm:px-8 lg:px-12">
+      <footer className="mx-auto max-w-[90rem] px-5 pb-10 pt-4 text-center text-sm font-bold text-[#172b4d] sm:px-8 lg:px-12">
         © 2026 Gelyn Keil Z. Dela Cruz. Crafted for thoughtful software quality engineering.
       </footer>
 
@@ -600,7 +599,7 @@ export default function Home() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 shadow-lg transition-all hover:bg-slate-100 hover:scale-105 active:scale-95"
+          className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#091e42]/20 bg-white text-[#091e42] shadow-lg transition-all hover:bg-[#091e42] hover:text-white hover:scale-105 active:scale-95"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

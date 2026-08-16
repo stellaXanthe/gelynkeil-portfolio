@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gelyn Keil Z. Dela Cruz - Portfolio",
-  description: "Results-driven Quality Engineer with almost 5 years' experience in Agile QA, test automation, and software engineering.",
+  description:
+    "Results-driven Quality Engineer with almost 5 years' experience in Agile QA, test automation, and software engineering.",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-slate-50 text-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-[#a2bffe] text-[#091e42]`}
       >
         {children}
       </body>
